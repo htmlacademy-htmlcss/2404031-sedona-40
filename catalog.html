@@ -2,13 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Каталог</title>
 </head>
 <body>
   <header class="page-header">
     <a class="header-logo-link" class="index.html" aria-current="page">
-      <img class="logo" src="images/logo.png" width="138" height="64"  alt="Логотип города Седона"></a>
+      <img class="logo" src="images/logo.svg" width="138" height="64"  alt="Логотип города Седона"></a>
     <nav class="navigation">
       <Ul class="navigation-main-list">
         <li class="navigation-item">
@@ -38,14 +39,17 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="brown-button">
+          <div class="small-button">
+            <a class="navigation-link" href="#">
               Хочу сюда!
-            </span>
-          </a>
+            </a>
+          </div>
         </li>
       </Ul>
     </nav>
+    </header>
+    <main class="main-inner">
+<section class="catalog-filter">
     <h1 class="inner-header-title">Гостиницы Седоны</h1>
     <ul class="breadcrumbs"></ul>
     <li class="breadcrumbs-list">
@@ -56,8 +60,6 @@
       <a class="breadcrumbs-item">Гостиницы </a>
     </li>
   </header>
-  <main class="main-inner">
-<section class="catalog-filter">
   <h2 class="visually-hidden">Фильтры для поиска гостиниц</h2>
   <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get"  >
     <fieldset class="catalog-filter-group" >
@@ -69,7 +71,7 @@
             Бассейн
           </label>
         </li>
-        <li class="catalg-filter-item">
+        <li class="catalog-filter-item">
           <label class="control">
             <input class="control-input" type="checkbox" name="parking" checked>
             Парковка
@@ -144,7 +146,7 @@
   <ul class="hotel-list">
     <li class="hotel-card">
       <a class="hotel-card-link" href="#">
-        <img class="hotel-card-image"  src="images/hotel-cards/hotel-1.jpg" alt="Вид через ущелье на звездное небо">
+        <img class="hotel-card-image"  src="images/hotel-cards/hotel-1.jpg" width="300" height="212"  alt="Вид через ущелье на звездное небо">
       </a>
       <a class="hotel-card-link" href="#">
         <h3>Amara Resort & SPA</h3>
@@ -160,7 +162,7 @@
     </li>
     <li class="hotel-card">
       <a class="hotel-card-link" href="#">
-        <img class="hotel-card-image"  src="images/hotel-cards/hotel-2.jpg" alt="Вид на горы в закате">
+        <img class="hotel-card-image"  src="images/hotel-cards/hotel-2.jpg" width="300" height="212"  alt="Вид на горы в закате">
       </a>
       <a class="hotel-card-link" href="#">
         <h3>Villas at Poco Diablo</h3>
@@ -176,7 +178,7 @@
     </li>
     <li class="hotel-card">
       <a class="hotel-card-link" href="#">
-        <img class="hotel-card-image"  src="images/hotel-cards/hotel-3.jpg" alt="Вид на горы">
+        <img class="hotel-card-image"  src="images/hotel-cards/hotel-3.jpg" width="300" height="212"  alt="Вид на горы">
       </a>
       <a class="hotel-card-link" href="#">
         <h3>Desert Quail Inn</h3>
@@ -192,7 +194,7 @@
     </li>
     <li class="hotel-card">
       <a class="hotel-card-link" href="#">
-        <img class="hotel-card-image"  src="images/hotel-cards/hotel-4.jpg" alt="Вид на горы в последнюю минуту заката">
+        <img class="hotel-card-image"  src="images/hotel-cards/hotel-4.jpg" width="300" height="212"  alt="Вид на горы в последнюю минуту заката">
       </a>
       <a class="hotel-card-link" href="#">
         <h3>Green Tree Inn</h3>
@@ -239,6 +241,7 @@
   <button class="button-subscription-button" type="submit">Подписаться</button>
   </form>
 </section>
+</main>
 <footer class="page-footer">
   <section class="footer-social-list">
     <h2 class="visually-hidden">Мы в социальных сетях</h2>
@@ -260,10 +263,9 @@
 
   <span class="visually hidden"> Телефон:</span>
   <a class="contacts-phone" href="tel:+78128121212">+78128121212</a>
-
   <span class="visually-hidden">Логотип разработчика:</span>
   <a href="https://htmlacademy.ru"></a>
-  <img src="images/svg/HTML Academy.svg" alt="Логотип htmlacademy">
+
 </footer>
   </body>
 </html>
