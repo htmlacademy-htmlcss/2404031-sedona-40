@@ -193,21 +193,22 @@ button {
 }
 
 .hero {
-  background: #82B3D3 url("../images/background/index-background.jpg") no-repeat center center scroll,
-
-  ;
+  background: #82B3D3 url("../images/background/index-background.jpg") no-repeat center center scroll;
   text-align: center;
   display: block;
   width: 1200px;
   height: 485px;
+}
 
+
+/*
   background-image: url('../images/svg/divider.svg');
   background-repeat:no-repeat;
   background-position:bottom;
-  background-size:1200px 57px;
+  background-size:1200px 57px;*/
 
 
-}
+
 
 
 
