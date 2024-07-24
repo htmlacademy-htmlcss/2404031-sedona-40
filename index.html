@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="icon" href="favicon.svg" sizes="32x32">
+    <link rel="icon" href="favicon.ico" sizes="32x32">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
     <meta charset="utf-8">
@@ -11,7 +11,7 @@
 <header class="page-header">
 
   <nav class="navigation">
-    <Ul class="navigation-main">
+    <ul class="navigation-main">
       <li class="navigation-item">
       <a class="header-logo-link" href="index.html" aria-current="page">
         <img class="logo" src="images/svg/logo.svg" width="138" height="64"  alt="Логотип города Седона"></a>
@@ -73,7 +73,6 @@
       <li class="advantage-item">
       <div class="advantage-item-flex">
         <h3 class="advantage-title">Настоящий городок</h3>
-        <hr class="hr-white">
         <p class="advantage-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
       </div>
         <img class="advantage-image-right"  src="images/photo-main-1.jpg" width="800" height="385" alt="аутентичный домик в Седоне">
@@ -81,15 +80,13 @@
       <li class="advantage-item">
         <div class="advantage-item-flex">
         <h3 class="advantage-title">Небольшая площадь</h3>
-        <hr class="hr-black">
         <p class="advantage-item-description">Все достопримечательности находятся очень близко</p>
         </div>
       </li>
 
       <li class="advantage-item">
         <div class="advantage-item-flex">
-        <h3 class="advantage-title">Красивая дорога</h3>
-        <hr class="hr-black">
+        <h3 class="advantage-title">Красивая <br/> дорога</h3>
         <p class="advantage-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       </div>
       </li>
@@ -97,7 +94,6 @@
       <li class="advantage-item">
         <div class="advantage-item-flex">
         <h3 class="advantage-title">Мало <br/> туристов</h3>
-        <hr class="hr-black">
         <p class="advantage-item-description">Большинство едет в Гранд Каньон и толпится там</p>
       </div>
       </li>
@@ -106,7 +102,6 @@
           <img class="advantage-image-left"  src="images/photo-main-2.jpg" width="800" height="385" alt="Мост дьявола">
           <div class="advantage-item-flex">
         <h3 class="advantage-title">Там есть мост дьявола</h3>
-        <hr class="hr-black">
         <p class="advantage-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </div>
       </li>
@@ -145,7 +140,7 @@
     <div class="booking-container">
     <h2 class="booking-title">Заинтересовались?</h2>
     <p class="booking-description">Укажите предполагаемые даты поездки,<br/> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <button class="button booking-button" type="button">Поиск гостиницы в Седоне</button>
+    <button class="button booking-button brown-button" type="button" onclick="document.location='catalog.html'">Поиск гостиницы в Седоне</button>
     </div>
   </section>
   <section class="subscription">
@@ -157,7 +152,7 @@
     <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
     <label for="subscription-email" class="visually-hidden"> Укажите ваш e-mail </label>
     <input class="subscription-field" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
-    <button class="button-subscription-button" type="submit">Подписаться</button>
+    <button class="button-subscription-button blue-button" type="submit">Подписаться</button>
     </form>
 
     </div>
@@ -184,7 +179,7 @@
     </div>
     <div class="phone-number">
     <span class="visually-hidden"> Телефон:</span>
-    <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12 </a>
+    <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12 </a>
     </div>
     <div class="logo-academy">
     <span class="visually-hidden">Логотип разработчика:</span>
@@ -192,5 +187,9 @@
     </div>
   </div>
 </footer>
+  
   </body>
 </html>
+
+
+
