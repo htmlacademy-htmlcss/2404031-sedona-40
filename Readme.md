@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Анастасия Мельникова](https://up.htmlacademy.ru/htmlcss/40/user/2404031).
-* Наставник: `Неизвестно`.
+* Наставник: [Валера Хаслер](https://htmlacademy.ru/profile/id224163).
+* Сайт: [Мой проект Седона](https://tayacreator.github.io/2404031-sedona-40/)
 
 ---
 
