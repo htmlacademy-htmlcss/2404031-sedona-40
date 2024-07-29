@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="icon" href="favicon.svg" sizes="32x32">
+    <link rel="icon" href="favicon.ico" sizes="32x32">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
@@ -9,42 +9,41 @@
 </head>
 <body>
   <header class="page-header">
-
     <nav class="navigation">
-      <Ul class="navigation-main">
+      <ul class="navigation-main">
         <li class="navigation-item">
           <a class="header-logo-link" href="index.html" aria-current="page">
             <img class="logo" src="images/svg/logo.svg" width="138" height="64"  alt="Логотип города Седона"></a>
         </li>
         <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="index.html" aria-current="page">Главная</a>
+            <a class="navigation-link" href="index.html" aria-current="page">Главная</a>
         </li>
         <li class="navigation-item">
             <a class="navigation-link" href="about.html">О Седоне</a>
         </li>
         <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
         </li>
-      </Ul>
-      <ul class="navigation-user">
+      </ul>
+      <Ul class="navigation-user">
         <li class="navigation-user-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">
-            Поиск
-            </span>
+          <a class="navigation-user-link" href="#">
+            <span class="visually-hidden">Поиск</span>
           </a>
         </li>
         <li class="navigation-user-item">
-          <a class="navigation-link" href="#">
+          <a class="navigation-user-link" href="#">
             <span class="visually-hidden">Отелей в избранном:</span>
-              <div class="count">
+            <div class="count">
               <span class="in-favorites-text">12</span>
             </div>
           </a>
         </li>
         <li class="navigation-user-item">
-            <div class="small-button">
-              <a class="want-navigation-link" href="#">Хочу сюда!</a>
+          <div class="small-button brown-button">
+            <a class="want-navigation-link" href="#">
+              Хочу сюда!
+            </a>
           </div>
         </li>
       </ul>
@@ -59,11 +58,8 @@
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link-home" href="index.html"></a>
         </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-devider"></a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Гостиницы </a>
+        <li class="breadcrumbs-item"><span class="breadcrumbs-devider"></span></li>
+        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Гостиницы </a>
         </li>
     </ul>
     </div>
@@ -126,7 +122,7 @@
       <legend class="catalog-filter-title range-title">Стоимость, Р: </legend>
         <label for="min-price">
             <span class="input-wrapper-min">
-            <input class="input-field min" type="text" name="min-price" id="min-price" value="0"> 
+            <input class="input-field min" type="text" name="min-price" id="min-price" value="0">
               <span class="min-price">от</span>
         </label>
           </span>
@@ -330,32 +326,30 @@
 <footer class="page-footer">
   <div class="footer-container">
     <div class="footer-social-list">
-    <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="footer-social-link footer-social-telegramm" href="https://t.me/htmlacademy"></a>
-          <span class="visually-hidden">Telegram</span>
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="footer-social-link footer-social-telegramm" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Telegram</span></a>
         </li>
-        <li class="social-item">
-          <a class="footer-social-link footer-social-vk" href="https://vk.com/htmlacademy"></a>
-          <span class="visually-hidden">Vkontakte</span>
-        </li>
-        <li class="social-item">
-          <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/user/htmlacademy.ru"></a>
-          <span class="visually-hidden">Youtube</span>
+          <li class="social-item">
+            <a class="footer-social-link footer-social-vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Vkontakte</span></a>
+          </li>
+          <li class="social-item">
+            <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/user/htmlacademy.ru">
+            <span class="visually-hidden">Youtube</span></a>
         </li>
       </ul>
     </div>
-    <div class="phone-number">
-      <span class="visually-hidden"> Телефон:</span>
-        <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12 </a>
-    </div>
-      <div class="logo-academy">
-        <span class="visually-hidden">Логотип разработчика:</span>
-        <a href="https://htmlacademy.ru"></a>
+      <div class="phone-number">
+          <a class="contact-phone" href="tel:+78128121212"><span class="visually-hidden"> Телефон:</span> +7 (812) 812-12-12 </a>
       </div>
+    <div class="logo-academy">
+          <a href="https://htmlacademy.ru"><span class="visually-hidden">Логотип разработчика:</span></a>
+    </div>
   </div>
 </footer>
-
   </body>
+
 </html>
