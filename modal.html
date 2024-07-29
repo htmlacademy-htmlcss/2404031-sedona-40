@@ -1,7 +1,9 @@
+
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" href="favicon.svg" sizes="32x32">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
     <meta charset="utf-8">
@@ -132,7 +134,7 @@
     <div class="booking-container">
       <h2 class="booking-title">Заинтересовались?</h2>
         <p class="booking-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button booking-button brown-button" href="catalog.html">Поиск гостиницы в Седоне</a>
+        <button class="button booking-button brown-button" type="button" onclick="document.location='catalog.html'">Поиск гостиницы в Седоне</button>
     </div>
   </section>
   <section class="subscription">
@@ -169,13 +171,70 @@
       </ul>
     </div>
       <div class="phone-number">
-          <a class="contact-phone" href="tel:+78128121212"><span class="visually-hidden"> Телефон:</span> +7 (812) 812-12-12 </a>
+        <span class="visually-hidden"> Телефон:</span>
+          <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12 </a>
       </div>
     <div class="logo-academy">
-          <a href="https://htmlacademy.ru"><span class="visually-hidden">Логотип разработчика:</span></a>
+        <span class="visually-hidden">Логотип разработчика:</span>
+          <a href="https://htmlacademy.ru"></a>
     </div>
   </div>
 </footer>
+<div class="modal-container">
+  <div class="modal modal-auth">
+    <button class="modal-close-button">
+    <span class="visually-hidden">Закрыть</span>
+    </button>
+<section class="modal-content">
+  <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+  <form class="catalog-form" action="catalog.html" method="get">
+    <fieldset class="date">
+      <div class="field-check-in-out">
+        <label class="travel-info-text" for="check-in-date">Дата Заезда:</label>
+        <input class="field-check-inner" type="date"  id="check-in-date" name="check-in-date" required>
+      </div>
+      <p class="text-small">Мы не можем отправить вас в прошлое.</p>
+        <div class="field-check-in-out">
+        <label class="travel-info-text" for="check-out-date">Дата выезда</label>
+        <input class="field-check-inner" type="date"  id="check-out-date" name="check-out-date" required>
+        </div>
+        <p class="text-grey">На эти даты есть свободные номера. Пока есть.</p>
+    </fieldset>
+   <fieldset class="guests">
+      <div class="persons-number">
+        <label class="travel-info-adults" for="adults">Взрослые:</label>
+        <div class="quantity_inner">
+          <button class="bt_minus">
+              <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </button>
+          <input type="text" value="1" size="2" class="quantity" data-max-count="20">
+          <button class="bt_plus">
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </button>
+      </div>
+    </div>
+      <div class="persons-number">
+        <label class="travel-info-children" for="children">Дети:</label>
+        <span class="children-important-info">i</span>
+        <div class="quantity_inner">
+          <button class="bt_minus">
+              <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </button>
+          <input type="text" value="1" size="2" class="quantity" data-max-count="20">
+          <button class="bt_plus">
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </button>
+      </div>
+    </div>
+  </fieldset>
+  <div class="modal-button">
+    <button class="modal-button blue-button" type="submit">Найти</button>
+  </div>
+  </form>
+</section>
+</div>
+</div>
+
   </body>
 
 </html>
